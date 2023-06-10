@@ -1,0 +1,145 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  /* ## Colors */
+
+/* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--font: 'Poppins', sans-serif;
+}
+body{
+  font-family: var(--font);
+  font-size: 15px;
+  padding: 0 5em;
+  background-color: rgb(247, 233, 207,0.3);
+  height: 110vh;
+}
+.top-div{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.title1{
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+.powered{
+  font-weight: 600;
+color: var(--Very-Dark-Blue);
+margin-bottom: 0.5em;
+}
+.paragraph-top{
+  font-size: 14px;
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+}
+
+/* down div 3 columns */
+
+.down{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  
+}
+
+.left,.right{
+  display: grid;
+  place-items: center;
+}
+
+/* midle column */
+.midle{
+  display: grid;
+  grid-gap: 2em;
+  margin-bottom: 2em;
+}
+.status{
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  font-size: 20px;
+  color: var(--Very-Dark-Blue);
+}
+.paragraph-down{
+  width: 95%;
+  margin-bottom: 5em;
+}
+.minia{
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 0.6em;
+  position: relative;
+  box-shadow: 0px 3px 10px gray;
+}
+img{
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
+/* border top to each div-down */
+.div-left{
+  border-top: 0.4em solid var(--Cyan);
+}
+.midle-top{
+  border-top: 0.4em solid var(--Red);
+}
+.midle-down{
+  border-top: 0.4em solid var(--Orange);
+}
+.div-right{
+  border-top: 0.4em solid var(--Blue);
+}
+
+
+ @media(max-width:700px){
+  .down{
+    grid-template-columns: 1fr;
+  }
+  .minia{
+    width: 100%;
+  }
+  .top-div{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  .midle{
+    margin-bottom: 0;
+  }
+  .div-right{
+    margin-bottom: 2em;
+  }
+}
+
+
+@media(max-width:500px){
+body{
+  padding: 2em 1em;
+}
+.title1,.powered{
+  font-size: 18px;
+}
+
+}
