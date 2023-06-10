@@ -30,9 +30,10 @@
 body{
   font-family: var(--font);
   font-size: 15px;
-  padding: 0 5em;
+  padding: 2em 8em;
   background-color: rgb(247, 233, 207,0.3);
   height: 110vh;
+  
 }
 .top-div{
   text-align: center;
@@ -84,6 +85,9 @@ margin-bottom: 0.5em;
 .paragraph-down{
   width: 95%;
   margin-bottom: 5em;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  font-size: 14px;
 }
 .minia{
   background-color: white;
